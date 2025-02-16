@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bowlby+One+SC&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rammetto+One&family=Varela+Round&family=Zen+Dots&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.education-section {
+    padding: 50px;
+    background-image: url('../portfolioimges/skill.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    text-align: center;
+  }
+  
+  .section-title  {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color:yellow;
+    font-family: "Bowlby One SC", serif;
+    font-weight: 400;
+
+  }
+  
+  .timeline-item {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .institution {
+    font-size: 20px;
+    color: #222;
+    margin: 0;
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .degree {
+    font-size: 1.2em;
+    color: #666;
+    margin: 5px 0;
+    font-family: "Poetsen One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .year {
+    font-size: 1em;
+    color: #888;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .description {
+    color: #555;
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  

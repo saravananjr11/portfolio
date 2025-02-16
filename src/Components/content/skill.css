@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.cont {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: black;
+}
+
+.Title {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: yellow;
+  font-family: "Bowlby One SC", serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.skill-card {
+  background: rgba(219, 209, 205, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  text-align: center;
+  transition: transform 0.3s;
+  color: white;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  animation: jump 2s infinite ease-in-out;
+}
+
+@keyframes jump {
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.skill-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f0ecec;
+}
+
+.skill-bar {
+  background: #f1f1f1;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 25px;
+  position: relative;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  border-radius: 20px;
+  color: #fff;
+  background: rgb(63, 94, 251);
+  background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+  text-align: right;
+  line-height: 25px;
+  font-size: 14px;
+  transition: width 0.3s ease;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.skill-bar-text {
+  padding: 0 5px;
+  color: #000;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  line-height: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .Title {
+    font-size: 2.2em;
+  }
+
+  .skill-card {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .Title {
+    font-size: 2em;
+  }
+
+  .skill-card {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Title {
+    font-size: 1.8em;
+  }
+
+  .skill-name {
+    font-size: 16px;
+  }
+
+  .skill-card {
+    padding: 20px;
+  }
+}

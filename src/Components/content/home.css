@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Rammetto+One&family=Varela+Round&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+.home{
+    width: auto;
+    height: auto;
+    background-image: url('../portfolioimges/HomeBack.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
+}
+.img img{
+    border-radius: 5px 70px 5px;
+    width: 400px;
+    height: 600px;
+
+}
+.content .im{
+    font-size: 20px;
+    color: rgb(255, 255, 255); 
+}
+.content .name{
+    font-size: 20px;
+    font-family: "Rammetto One", serif;
+    font-weight: 400;
+    color: orange;
+}
+.cahngetext h2{
+    color: white;
+}
+.cahngetext span{
+    color: rgb(224, 202, 202);
+    margin-left: 5px;
+}
+
+.para{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.para p{
+    color: rgb(255, 196, 0);
+    font-family: "Poppins", serif;
+    font-weight: 500;
+
+}
+.icon{
+    display: flex;
+    gap: 10px;
+}
+.icon .i a{
+    color: rgb(12, 25, 207);
+    text-decoration: none;
+    font-size: 30px;
+
+    &:hover{
+        color: orange;
+    }
+}
+.btn{
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+.btn button{
+    padding: 10px 20px;
+    background-color: rgb(31, 41, 189);
+    color: white;
+    border: none;
+    border-radius: 10px;
+
+    &:hover{
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        transition: all 0.5s ease-in-out;
+        
+    }
+}
+
+@media only screen and (max-width:780px){
+
+   
+    .img img{
+        border-radius: 5px 70px 5px;
+        width: 200px;
+        height: 500px;
+        
+    }
+    .img{
+        padding: 20px;
+    }
+    .content{
+        padding: 20px;
+    }
+
+    .content .im{
+        font-size: 10px;
+    }
+    .content .name{
+        font-size:20px;
+    }
+    .cahngetext h1, span{
+        color: red;
+        margin-left: 5px;
+        font-size: 15px;
+    }
+    .para{
+    
+        flex-direction: column;
+        gap: 5px;
+    }
+    .para p{
+        font-size: smaller;
+    }
+    .btn button{
+        padding: 5px 10px;
+        background-color: blueviolet;
+        color: white;
+    
+        &:hover{
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            transition: all 0.5s ease-in ;
+        }
+    }
+}
+
+@media only screen and (max-width:490px){
+    .home{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .img img{
+        border-radius: 50%;
+        height: 170px;   
+    }
+    .content .im{
+        font-size: 8px;
+    }
+    .content .name{
+        font-size: 10px;
+    }
+    .cahngetext h1, span{
+        color: red;
+        margin-left: 5px;
+        font-size: 10px;
+    }
+    .para{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .para p{
+        font-size: 10px;
+    }
+
+    
+}
+
+
+

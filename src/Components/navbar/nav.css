@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Rammetto+One&family=Varela+Round&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.active{
+    color: rgb(136, 255, 0) ;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid yellow;
+}
+
+.navbar{
+    /* height: 5rem; */
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    position:sticky;
+    top: 0;
+    background-color:rgba(0, 0, 0);
+    color: yellow;
+    /* background: linear-gradient(to left, #939caa, #748991, #5d7574, #4e6055, #454a3a); */
+}
+.logo{
+    display: flex;
+    gap: 10px;
+}
+.desktopMenuListItem{
+    margin: 1rem;
+    cursor: pointer;
+    font-family: "Satisfy", serif;
+    font-weight: 600;
+    font-style: normal;
+
+    &:hover{
+        color: rgb(255, 255, 255);
+        padding: 0.5rem;
+        border-bottom: 2px solid rgb(255, 255, 255);
+
+    }
+}
+.desktopMenuBtn{
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px 0px 15px;
+    border: none;
+
+    &:hover{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+    }
+}
+.MobMenu{
+    display: none;
+
+}
+.navMenu{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40, 40, 40);
+    border-radius: 1rem;
+    color: white;
+}
+
+.ListItem{
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30, 30, 30);
+
+    &:hover{
+        color: yellow;
+        padding: 0.5rem;
+        border-bottom: 2px solid rgb(252, 249, 249);
+
+    }
+
+}
+
+@media only screen and (max-width:770px){
+    .MobMenu{
+        display: flex;
+    }
+    .desktopMenu{
+        display: none;
+    }
+    .desktopMenuBtn{
+        display: none;
+    }
+    .logo h2{
+        font-size: 20px;
+    }
+    .logo img{
+        width: 40px;
+        height: 40px;
+    }
+}
