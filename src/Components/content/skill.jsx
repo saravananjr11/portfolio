@@ -42,7 +42,7 @@ function Skills() {
     }, 30);
 
     return () => clearInterval(interval);
-  }, [percentages]);
+  }, [percentages,skills]);
 
   return (
     <div className="cont" id="skill">

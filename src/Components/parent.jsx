@@ -6,7 +6,7 @@ import About from './content/about';
 import Education from './content/education';
 import Skill from './content/skill';
 import Project from './content/project';
-import SkillSection from './content/skillCard';
+// import SkillSection from './content/skillCard';
 
 function Parent() {
   return (

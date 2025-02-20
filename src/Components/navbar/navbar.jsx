@@ -4,7 +4,7 @@ import {Link} from "react-scroll"
 import Logo from "../imgs/logo1.png"
 import { FaBars } from "react-icons/fa6";
 import { ImCross } from "react-icons/im";
-import Skill from '../content/skill';
+// import Skill from '../content/skill';
 
 function Navbar() {
     const [showMenu,setShowMenu]=useState(false)

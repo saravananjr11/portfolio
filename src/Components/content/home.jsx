@@ -13,13 +13,16 @@ function Home() {
   return (
     <>
       <div className="home">
-        <div className="content"
-         data-aos="fade-right"  data-aos-delay="50"
-         data-aos-duration="1000"
-         data-aos-easing="ease-in-out"
-         data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-center">
+        <div
+          className="content"
+          data-aos="fade-right"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
           <div className="im">
             <h2>HELLO I'M</h2>
           </div>
@@ -69,17 +72,17 @@ function Home() {
           </div>
           <div className="icon">
             <div className="i">
-              <a href="">
+              <a href="#">
                 <FaInstagram />
               </a>
             </div>
             <div className="i">
-              <a href="">
+              <a href="#">
                 <FaFacebook />
               </a>
             </div>
             <div className="i">
-              <a href="">
+              <a href="#">
                 <FaTwitter />
               </a>
             </div>
@@ -89,13 +92,16 @@ function Home() {
             <button>Education</button>
           </div>
         </div>
-        <div className="img"data-aos="fade-left"
-         data-aos-delay="50"
-         data-aos-duration="1000"
-         data-aos-easing="ease-in-out"
-         data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-center">
+        <div
+          className="img"
+          data-aos="fade-left"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
           <div className="border"></div>
           <img src={SideImg} alt="" />
         </div>
