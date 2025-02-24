@@ -2,8 +2,10 @@ import React from "react";
 import "../content/home.css";
 import { Typewriter } from "react-simple-typewriter";
 import SideImg from "../portfolioimges/sideb.jpg";
-
+import Resume from "../portfolioimges/saravananCv.pdf";
 import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaBriefcase } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
@@ -16,7 +18,8 @@ function Home() {
         <div
           className="content"
           data-aos="fade-right"
-          data-aos-delay="50"
+          data-aos-offset="100"
+         data-aos-delay="0"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
@@ -72,24 +75,20 @@ function Home() {
           </div>
           <div className="icon">
             <div className="i">
-              <a href="#">
+              <a href="https://www.instagram.com/__saravana_jr/">
                 <FaInstagram />
               </a>
             </div>
             <div className="i">
-              <a href="#">
-                <FaFacebook />
+              <a href="https://www.linkedin.com/in/saravana-kumaran-s-5481a3333">
+                <FaLinkedin/>
               </a>
             </div>
-            <div className="i">
-              <a href="#">
-                <FaTwitter />
-              </a>
-            </div>
+           
           </div>
           <div className="btn">
-            <button>HIRE ME</button>
-            <button>Education</button>
+            <button><a href={Resume} download>HIRE ME</a></button>
+
           </div>
         </div>
         <div
